@@ -1,0 +1,38 @@
+{
+  "name": "@adity11/type",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon --exec ts-node src/server.ts"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@asteasolutions/zod-to-openapi": "^7.3.0",
+    "@nestjs/swagger": "^11.0.7",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@types/yaml": "^1.9.7",
+    "express-openapi-validator": "^5.4.6",
+    "nodemon": "^3.1.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swagger-ui-express": "^5.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "yaml": "^2.7.0"
+  }
+}
