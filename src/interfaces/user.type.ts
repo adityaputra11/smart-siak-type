@@ -1,6 +1,3 @@
-
-
-
 export enum UserRole {
   ADMIN = 'admin',
   STUDENT = 'student',
@@ -18,4 +15,5 @@ export interface User {
   isActive: boolean;
   createdAt: Date;
   updatedAt: Date;
+  age: number;
 }
