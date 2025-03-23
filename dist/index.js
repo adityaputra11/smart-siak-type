@@ -27,3 +27,4 @@ __exportStar(require("./interface/rule"), exports);
 __exportStar(require("./interface/semester"), exports);
 __exportStar(require("./interface/basetype"), exports);
 __exportStar(require("./interface/department"), exports);
+__exportStar(require("./interface/notification"), exports);

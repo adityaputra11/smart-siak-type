@@ -11,3 +11,4 @@ export * from './interface/rule';
 export * from './interface/semester';
 export * from './interface/basetype';
 export * from './interface/department';
+export * from './interface/notification';
