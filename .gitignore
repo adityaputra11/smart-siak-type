@@ -9,7 +9,7 @@ yarn.lock
 .env.*.local
 
 # Build
-dist/
+# dist/
 build/
 *.tsbuildinfo
 
