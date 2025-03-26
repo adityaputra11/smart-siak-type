@@ -1,5 +1,11 @@
 import { BaseType } from "./basetype";
 
+
+
+export enum NotificationType {
+  INFO = 'info',
+  WARNING = 'warning',
+}
 export interface Notification extends BaseType {
   user_id: string;
   title: string;
@@ -7,9 +13,4 @@ export interface Notification extends BaseType {
   read: boolean;
   type: NotificationType;
   link: string;
-}
-
-export enum NotificationType {
-  INFO = 'info',
-  WARNING = 'warning',
 }

@@ -1,17 +1,12 @@
-import { BaseType } from "./basetype";
+import { BaseStatus, BaseType } from "./basetype";
 import { Student } from "./student";
 
-export enum AcademicReportStatus {
-  ACTIVE = 'active',
-  INACTIVE = 'inactive',
-}
 
 export enum AcademicReportRemarks {
   ON_TRACK = 'on_track',
   WARNING = 'warning',
   AT_RISK = 'at_risk',
 }
-
 export interface AcademicReport extends BaseType {
   student_id: string;
   semester_id: string;
@@ -22,7 +17,6 @@ export interface AcademicReport extends BaseType {
   passed_courses: number;
   failed_courses: number;
   remarks: AcademicReportRemarks;
-  status: AcademicReportStatus;
   generated_at: Date;
   student: Student;
 }

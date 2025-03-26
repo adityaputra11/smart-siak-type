@@ -18,7 +18,7 @@ export enum Gender {
 }
 
 
-export interface Student extends BaseType {
+export interface Student extends Omit<BaseType, 'status'> {
   // base field
   name: string;
   nim: string;
@@ -44,13 +44,6 @@ export interface Student extends BaseType {
 
   // generated field
   academic_summary?: AcademicSummary;
-
-  get gpa(): number;
-  get total_courses(): number;
-  get passed_courses(): number;
-  get failed_courses(): number;
-  get total_credits_earned(): number;
-  get total_credits_remaining(): number;
 }
 
 export interface AcademicSummary {

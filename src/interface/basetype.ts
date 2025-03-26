@@ -1,3 +1,8 @@
+export enum BaseStatus {
+  ACTIVE = 'active',
+  INACTIVE = 'inactive',
+}
+
 export interface BaseType {
   id: string;
   created_at: Date;
@@ -6,4 +11,5 @@ export interface BaseType {
   updated_by: string;
   created_by: string;
   deleted_by: string;
+  status?: BaseStatus;
 }

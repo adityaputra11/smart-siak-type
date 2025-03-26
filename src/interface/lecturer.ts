@@ -1,12 +1,8 @@
-import { BaseType } from "./basetype";
+import { BaseStatus, BaseType } from "./basetype";
 import { Subject } from "./subject";
 import { ClassSchedule } from "./class_schedule";
 
-export enum LecturerStatus {
-  ACTIVE = 'active',
-  INACTIVE = 'inactive',
-}
-
+export type LecturerStatus = typeof BaseStatus;
 export interface Lecturer extends BaseType {
   name: string;
   nip: string;
@@ -14,7 +10,6 @@ export interface Lecturer extends BaseType {
   phone: string;
   department: string;
   specialization: string[];
-  status: LecturerStatus;
   user_id: string;
   subjects: Subject[];
   class_schedules: ClassSchedule[];

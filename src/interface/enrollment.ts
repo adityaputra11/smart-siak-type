@@ -15,7 +15,7 @@ export enum Grade {
   E = 'E',
 }
 
-export interface Enrollment extends BaseType {
+export interface Enrollment extends Omit<BaseType, 'status'> {
   student_id: string;
   subject_id: string;
   lecturer_id: string;

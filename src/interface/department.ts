@@ -1,5 +1,6 @@
 import { BaseType } from "./basetype";
 
+
 export interface Department extends BaseType {
   name: string;
   description: string;

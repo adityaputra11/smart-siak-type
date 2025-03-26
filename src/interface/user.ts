@@ -13,7 +13,7 @@ export enum UserStatus {
   BLOCKED = 'blocked',
 }
 
-export interface User extends BaseType {
+export interface User extends Omit<BaseType, 'status'> {
   username: string;
   email: string;
   password: string;
